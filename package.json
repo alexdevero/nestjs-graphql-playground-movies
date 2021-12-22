@@ -1,0 +1,16 @@
+{
+  "name": "nestjs-graphql-playground-movies",
+  "version": "1.0.0",
+  "description": "Playground built with Nest.js and GraphQL",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nestjs",
+    "nodejs",
+    "graphql"
+  ],
+  "author": "@alexdevero",
+  "license": "MIT"
+}
