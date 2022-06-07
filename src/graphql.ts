@@ -27,6 +27,7 @@ export class Movie {
     genre: string;
     year: number;
     id: string;
+    rating?: Nullable<number>;
 }
 
 type Nullable<T> = T | null;

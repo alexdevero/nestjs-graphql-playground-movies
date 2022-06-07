@@ -1,5 +1,8 @@
-import { Args, Query, Resolver } from '@nestjs/graphql'
+import { Args, Int, Query, Resolver } from '@nestjs/graphql'
+
 import { Movie } from '../../models/movie.model'
+
+import { MoviesService } from '../../../movies.service'
 
 @Resolver(of => Movie)
 export class MoviesResolver {
