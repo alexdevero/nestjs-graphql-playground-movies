@@ -36,6 +36,38 @@ $ npm run test:e2e
 $ npm run test:cov
 ```
 
+## Setup Heroku
+
+```bash
+# Login to Heroku
+$ heroku login
+
+# Create local git
+$ git init
+
+# Connect local project to existing Heroku project
+$ heroku git:remote -a <heroku-app-name>
+
+# Stage files
+$ git add .
+
+# Commit changes
+$ git commit -m "Deploying on heroku"
+
+# Push changes to Heroku, trigger deploy
+$ git push heroku master
+```
+
+## Update Heroku variables
+
+```bash
+$ heroku config:set PORT=8080
+
+$ heroku config:set NODE_ENV=production
+
+$ heroku config:set NPM_CONFIG_PRODUCTION=false
+```
+
 ## License
 
 This project is licensed under [MIT licensed](LICENSE).
